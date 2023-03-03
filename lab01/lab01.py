@@ -11,6 +11,8 @@ Original file is located at
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('TkAgg')
 df = pd.read_csv('data/housing.csv.gz')
 df.head()
 df.info()
