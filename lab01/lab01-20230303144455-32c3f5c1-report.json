@@ -1,0 +1,57 @@
+{
+    "student_id": 412498,
+    "lab_id": "lab01",
+    "check_number": 5,
+    "score": 0.0,
+    "tests": [
+        {
+            "type": "file_exists",
+            "file_name": "obraz1.png",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "plik 'obraz1.png' nie istnieje"
+        },
+        {
+            "type": "file_exists",
+            "file_name": "obraz2.png",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "plik 'obraz2.png' nie istnieje"
+        },
+        {
+            "type": "file_exists",
+            "file_name": "obraz3.png",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "plik 'obraz3.png' nie istnieje"
+        },
+        {
+            "type": "attributes",
+            "file_name": "korelacja.csv",
+            "rule_points": 0.0,
+            "max_rule_points": 2.0,
+            "message": "plik 'korelacja.csv' nie istnieje"
+        },
+        {
+            "type": "file_exists",
+            "file_name": "train_set.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "plik 'train_set.pkl' nie istnieje"
+        },
+        {
+            "type": "file_exists",
+            "file_name": "test_set.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "plik 'test_set.pkl' nie istnieje"
+        }
+    ],
+    "results": {
+        "points": 0.0,
+        "max_points": 7.0,
+        "score": 0.0,
+        "max_score": 100.0
+    },
+    "file_list": ".:\ntotal 32\ndrwxrwxrwx 2 root root 4096 Mar  3 14:23 data\n-rw-r--r-- 1 root root 1967 Mar  3 14:23 lab01-20230303142318-279b4379-report.json\n-rw-r--r-- 1 root root   32 Mar  3 14:23 lab01-20230303142318-279b4379-report.json.hmac\n-rw-r--r-- 1 root root 2037 Mar  3 14:32 lab01-20230303143214-fbba022f-report.json\n-rw-r--r-- 1 root root   32 Mar  3 14:32 lab01-20230303143214-fbba022f-report.json.hmac\n-rw-r--r-- 1 root root 2210 Mar  3 14:42 lab01-20230303144205-8a799a4e-report.json\n-rw-r--r-- 1 root root   32 Mar  3 14:42 lab01-20230303144205-8a799a4e-report.json.hmac\n-rw-r--r-- 1 root root    0 Mar  3 14:45 lab01-20230303144455-32c3f5c1-report.json\n-rw-rw-rw- 1 root root 1369 Mar  3 14:45 lab01.py\n\n./data:\ntotal 400\n-rw-rw-rw- 1 root root 409269 Mar  3 14:23 housing.csv.gz\n"
+}
