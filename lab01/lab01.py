@@ -21,15 +21,15 @@ df.ocean_proximity.describe()
 
 """1.4 Wizualizacja"""
 
-df.hist(bins=50, figsize=(20, 15))
+df.hist(bins=50, figsize=(20, 15)).savefig("obraz1.png")
 
-df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.1, figsize=(7,4))
+df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.1, figsize=(7,4)).savefig("obraz2.png")
 
-df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.4, figsize=(7,3), colorbar=True,s=df["population"]/100, label="population",c="median_house_value", cmap=plt.get_cmap("jet"))
+df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.4, figsize=(7,3), colorbar=True,s=df["population"]/100, label="population",c="median_house_value", cmap=plt.get_cmap("jet")).savefig("obraz3.png")
 
 """1.5 Analiza"""
 
-df.corr()["median_house_value"].sort_values(ascending=False).reset_index().rename(columns={"index":"atrybut", "median_house_values":"wspolczynnik_korelacji"}).to_csv("data.csv", index=False)
+df.corr()["median_house_value"].sort_values(ascending=False).reset_index().rename(columns={"index":"atrybut", "median_house_values":"wspolczynnik_korelacji"}).to_csv("korelacja.csv", index=False)
 
 import seaborn as sns
 sns.pairplot(df)
