@@ -12,7 +12,6 @@ Original file is located at
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use('TkAgg')
 df = pd.read_csv('data/housing.csv.gz')
 df.head()
 df.info()
@@ -23,9 +22,15 @@ df.ocean_proximity.describe()
 
 """1.4 Wizualizacja"""
 
-df.hist(bins=50, figsize=(20, 15)).savefig("obraz1.png")
-df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.1, figsize=(7,4)).savefig("obraz2.png")
-df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.4, figsize=(7,3), colorbar=True,s=df["population"]/100, label="population",c="median_house_value", cmap=plt.get_cmap("jet")).savefig("obraz3.png")
+matplotlib.use('TkAgg')
+df.hist(bins=50, figsize=(20, 15))
+plt.savefig("obraz1.png")
+
+df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.1, figsize=(7,4))
+plt.savefig("obraz2.png")
+
+df.plot(kind="scatter", x="longitude", y="latitude",alpha=0.4, figsize=(7,3), colorbar=True,s=df["population"]/100, label="population",c="median_house_value", cmap=plt.get_cmap("jet"))
+plt.savefig("obraz3.png")
 
 """1.5 Analiza"""
 
