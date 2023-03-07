@@ -8,7 +8,6 @@ Original file is located at
 
 1.3 Informacje o zbiorze danych
 """
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
