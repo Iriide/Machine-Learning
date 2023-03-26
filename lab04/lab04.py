@@ -15,8 +15,7 @@ data_iris = datasets.load_iris(as_frame=True)
 
 from sklearn.model_selection import train_test_split
 
-X_train_c, X_test_c, y_train_c, y_test_c = train_test_split(data_breast_cancer["data"], data_breast_cancer["target"], test_size=0.2)
-
+X_train_c, X_test_c, y_train_c, y_test_c = train_test_split(data_breast_cancer['data'][['mean smoothness', 'mean area']],data_breast_cancer['target'], test_size=0.2)
 X_train_i, X_test_i, y_train_i, y_test_i = train_test_split(data_iris["data"], data_iris["target"], test_size=0.2)
 
 """3. Klasyfikacja (breast cancer)"""
