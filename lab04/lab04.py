@@ -23,8 +23,8 @@ X_train_i, X_test_i, y_train_i, y_test_i = train_test_split(data_iris["data"], d
 from sklearn.svm import LinearSVC
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-svm_cancer = Pipeline([("linear_svc", LinearSVC(C=1, loss="hinge", random_state=42))])
-svm_cancer_auto_scale = Pipeline([("scaler", StandardScaler()), ("linear_svc", LinearSVC(C=1, loss="hinge", random_state=42))])
+svm_cancer = Pipeline([("linear_svc", LinearSVC(C=1, loss="hinge"))])
+svm_cancer_auto_scale = Pipeline([("scaler", StandardScaler()), ("linear_svc", LinearSVC(C=1, loss="hinge"))])
 
 svm_cancer.fit(X_train_c, y_train_c)
 svm_cancer_auto_scale.fit(X_train_c, y_train_c)
