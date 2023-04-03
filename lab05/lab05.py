@@ -19,8 +19,6 @@ import pickle
 import pandas as pd
 import graphviz
 from sklearn.metrics import mean_squared_error
-import pydotplus
-
 """1. Przygotwanie danych"""
 
 data = datasets.load_breast_cancer(as_frame=True)
@@ -66,13 +64,14 @@ test_f1 = f1_score(y_test, y_pred_test)
 train_acc = tree_clf.score(X_train, y_train)
 test_acc = tree_clf.score(X_test, y_test)
 
-array = [max_depth, train_f1, test_f1, train_acc, test_acc]
+array = [tree_clf.tree_.max_depth, train_f1, test_f1, train_acc, test_acc]
 with open("f1acc_tree.pkl", 'wb') as f:
     pickle.dump(array, f)
 
 dot_data = export_graphviz(tree_clf, out_file=None, rounded=True, filled=True, feature_names=['mean texture', 'mean symmetry'])
-graph = pydotplus.graph_from_dot_data(dot_data)
-graph.write_png('bc.png')
+graph = graphviz.Source(dot_data)
+graph.format = "png"
+graph.render("bc")
 
 """4. Regresja"""
 
@@ -120,13 +119,14 @@ y_pred_test = tree_reg.predict(X_test)
 train_f1 = mean_squared_error(y_train, y_pred_train)
 test_f1 = mean_squared_error(y_test, y_pred_test)
 
-array = [max_depth, train_f1, test_f1]
+array = [tree_reg.tree_.max_depth, train_f1, test_f1]
 with open("mse_tree.pkl", 'wb') as f:
     pickle.dump(array, f)
 
 dot_data = export_graphviz(tree_reg, out_file=None, rounded=True, filled=True)
-graph = pydotplus.graph_from_dot_data(dot_data)
-graph.write_png('reg.png')
+graph = graphviz.Source(dot_data)
+graph.format = "png"
+graph.render("reg")
 
 """5. Porównanie regresji"""
 
