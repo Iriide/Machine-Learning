@@ -1,0 +1,39 @@
+{
+    "student_id": 412498,
+    "lab_id": "lab05",
+    "check_number": 2,
+    "score": 100.0,
+    "tests": [
+        {
+            "type": "file_exists",
+            "file_name": "bc.png",
+            "rule_points": 1.0,
+            "max_rule_points": 1.0
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "f1acc_tree.pkl",
+            "rule_points": 5.0,
+            "max_rule_points": 5.0
+        },
+        {
+            "type": "file_exists",
+            "file_name": "reg.png",
+            "rule_points": 1.0,
+            "max_rule_points": 1.0
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "mse_tree.pkl",
+            "rule_points": 5.0,
+            "max_rule_points": 5.0
+        }
+    ],
+    "results": {
+        "points": 12.0,
+        "max_points": 12.0,
+        "score": 100.0,
+        "max_score": 100.0
+    },
+    "file_list": ".:\ntotal 440\n-rw-rw-r-- 1 student student   1743 Apr  3 16:59 bc\n-rw-rw-r-- 1 student student 136119 Apr  3 16:59 bc.png\n-rw-rw-r-- 1 student student    179 Apr  3 16:59 f1acc_tree.pkl\n-rw-r--r-- 1 student root      4615 Apr  3 16:59 lab05.py\n-rw-rw-r-- 1 student student    141 Apr  3 16:59 mse_tree.pkl\n-rw-rw-r-- 1 student student   3282 Apr  3 16:59 reg\n-rw-rw-r-- 1 student student 284927 Apr  3 16:59 reg.png\n"
+}
