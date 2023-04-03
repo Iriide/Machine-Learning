@@ -81,6 +81,7 @@ X = np.random.rand(size)*5-2.5
 w4, w3, w2, w1, w0 = 1, 2, 1, -4, 2
 y = w4*(X**4) + w3*(X**3) + w2*(X**2) + w1*X + w0 + np.random.randn(size)*8-4
 
+
 df = pd.DataFrame({'x': X, 'y': y})
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
