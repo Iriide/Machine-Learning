@@ -1,0 +1,61 @@
+{
+    "student_id": 412498,
+    "lab_id": "lab06",
+    "check_number": 2,
+    "score": 68.75,
+    "tests": [
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "acc_vote.pkl",
+            "rule_points": 4.5,
+            "max_rule_points": 5.0,
+            "message": "warto\u015bci w tablicy  [[0.70989011 0.68421053]\n [1.         0.74561404]\n [0.77142857 0.63157895]\n [0.84395604 0.66666667]\n [0.96483516 0.71052632]] w pliku 'acc_vote.pkl' poni\u017cej progu"
+        },
+        {
+            "type": "file_exists",
+            "file_name": "vote.pkl",
+            "rule_points": 2.0,
+            "max_rule_points": 2.0
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "acc_bag.pkl",
+            "rule_points": 7.0,
+            "max_rule_points": 7.0
+        },
+        {
+            "type": "file_exists",
+            "file_name": "bag.pkl",
+            "rule_points": 2.0,
+            "max_rule_points": 2.0
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "acc_fea.pkl",
+            "rule_points": 1.0,
+            "max_rule_points": 2.0,
+            "message": "warto\u015bci w tablicy  [0.94065934 0.73684211] w pliku 'acc_fea.pkl' poni\u017cej progu"
+        },
+        {
+            "type": "file_pickle_ndarray_types",
+            "file_name": "fea.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "b\u0142\u0119dne warto\u015bci w tablicy  ['BaggingClassifier(base_estimator=DecisionTreeClassifier(),\\n                  bootstrap_features=True, max_features=2, max_samples=0.5,\\n                  n_estimators=30)'] w pliku 'fea.pkl' "
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent_columns",
+            "file_name": "acc_fea_rank.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 5.0,
+            "message": "b\u0142\u0119dny format danych w pliku 'acc_fea_rank.pkl'"
+        }
+    ],
+    "results": {
+        "points": 16.5,
+        "max_points": 24.0,
+        "score": 68.75,
+        "max_score": 100.0
+    },
+    "file_list": ".:\ntotal 2236\n-rw-rw-r-- 1 student student     381 Apr 13 18:00 acc_bag.pkl\n-rw-rw-r-- 1 student student     139 Apr 13 18:00 acc_fea.pkl\n-rw-rw-r-- 1 student student     301 Apr 13 18:00 acc_vote.pkl\n-rw-rw-r-- 1 student student 1878311 Apr 13 18:00 bag.pkl\n-rw-rw-r-- 1 student student  278324 Apr 13 18:00 fea.pkl\n-rw-r--r-- 1 student root       4149 Apr 13 18:00 lab06.py\n-rw-rw-r-- 1 student student  106720 Apr 13 18:00 vote.pkl\n"
+}
