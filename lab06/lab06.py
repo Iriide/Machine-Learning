@@ -93,3 +93,14 @@ classifiers = [bag_clf, bag_clf_50, pas_clf, pas_clf_50, rtf_clf, ada_clf, gbc_c
 
 with open("bag.pkl", 'wb') as f:
     pickle.dump(classifiers, f)
+
+"""4. Sampling"""
+bgc_clf = BaggingClassifier(base_estimator=DecisionTreeClassifier(), n_estimators=30, max_samples=0.5, max_features=2, bootstrap=True, bootstrap_features=True)
+bgc_clf.fit(X_train, y_train)
+
+accuracy = [bgc_clf.score(X_train, y_train), bgc_clf.score(X_test, y_test)]
+
+with open("acc_fea.pkl", 'wb') as f:
+    pickle.dump(accuracy, f)
+with open("fea.pkl", 'wb') as f:
+    pickle.dump([bgc_clf], f)
