@@ -18,6 +18,7 @@ from sklearn.ensemble import BaggingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.ensemble import GradientBoostingClassifier
+import pandas as pd
 
 """1. Przygotowanie danych"""
 
@@ -104,3 +105,20 @@ with open("acc_fea.pkl", 'wb') as f:
     pickle.dump(accuracy, f)
 with open("fea.pkl", 'wb') as f:
     pickle.dump([bgc_clf], f)
+
+"""5.Features accuracy"""
+estimators = bgc_clf.estimators_
+estimators_features = bgc_clf.estimators_features_
+
+train_acc = []
+test_acc = []
+features = []
+
+for tree, feature in zip(estimators, estimators_features):
+    train_acc.append(bgc_clf.score(X_train, y_train))
+    test_acc.append(bgc_clf.score(X_test, y_test))
+    features.append(feature)
+
+df = pd.DataFrame({'train': train_acc, 'test': test_acc, 'features': features})
+df.sort_values(by=['test', 'train'], inplace=True, ascending=False)
+df.to_pickle('acc_fea_rank.pkl')
