@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import pickle
-
 from sklearn.datasets import fetch_openml
 from sklearn.cluster import KMeans, DBSCAN
 from sklearn.metrics import silhouette_score, confusion_matrix
@@ -23,11 +22,11 @@ y = mnist['target']
 
 """2. KMeans"""
 
-km8 = KMeans(8)
-km9 = KMeans(9)
-km10 = KMeans(10)
-km11 = KMeans(11)
-km12 = KMeans(12)
+km8 = KMeans(n_clusters=8, n_init=10)
+km9 = KMeans(n_clusters=9, n_init=10)
+km10 = KMeans(n_clusters=10, n_init=10)
+km11 = KMeans(n_clusters=11, n_init=10)
+km12 = KMeans(n_clusters=12, n_init=10)
 
 y_km8 = km8.fit_predict(X)
 y_km9 = km9.fit_predict(X)
@@ -74,7 +73,7 @@ array = np.array([], dtype=np.int32)
 for eps in np.arange(eps_mean, eps_mean+eps_mean * 0.1, eps_mean * 0.04):
     dbscan = DBSCAN(eps)
     clusters = dbscan.fit_predict(X)
-    clusters = len(set(clusters)) - (1 if -1 in clusters else 0)
+    clusters = len(set(clusters))
     array = np.append(array, clusters)
 
 with open('dbscan_len.pkl', 'wb') as f:
