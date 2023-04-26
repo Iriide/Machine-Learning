@@ -1,0 +1,42 @@
+{
+    "student_id": 412498,
+    "lab_id": "lab07",
+    "check_number": 1,
+    "score": 14.29,
+    "tests": [
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "kmeans_sil.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 5.0,
+            "message": "b\u0142\u0119dny format danych w pliku 'kmeans_sil.pkl'"
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "kmeans_argmax.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 2.0,
+            "message": "b\u0142\u0119dny format danych w pliku 'kmeans_argmax.pkl'"
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "dist.pkl",
+            "rule_points": 2.0,
+            "max_rule_points": 2.0
+        },
+        {
+            "type": "file_pickle_ndarray_plus_minus_percent",
+            "file_name": "dbscan_len.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 5.0,
+            "message": "Z\u0142y wymiar tablicy w pliku 'dbscan_len.pkl'"
+        }
+    ],
+    "results": {
+        "points": 2.0,
+        "max_points": 14.0,
+        "score": 14.29,
+        "max_score": 100.0
+    },
+    "file_list": ".:\ntotal 20\n-rw-rw-r-- 1 student student  291 Apr 26 14:27 dbscan_len.pkl\n-rw-rw-r-- 1 student student  291 Apr 26 14:18 dist.pkl\n-rw-rw-r-- 1 student student  211 Apr 26 14:15 kmeans_argmax.pck\n-rw-rw-r-- 1 student student  196 Apr 26 14:15 kmeans_sil.pck\n-rw-r--r-- 1 student root    2052 Apr 26 13:56 lab07.py\n"
+}
