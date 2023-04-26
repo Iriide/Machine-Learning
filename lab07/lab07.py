@@ -78,5 +78,5 @@ for eps in np.arange(eps_mean, eps_mean+eps_mean * 0.1, eps_mean * 0.04):
     array = np.append(array, clusters)
 
 with open('dbscan_len.pkl', 'wb') as f:
-    pickle.dump(eps_values, f)
+    pickle.dump(array, f)
 
