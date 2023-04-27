@@ -28,24 +28,26 @@ km10 = KMeans(n_clusters=10, n_init=10)
 km11 = KMeans(n_clusters=11, n_init=10)
 km12 = KMeans(n_clusters=12, n_init=10)
 
-y_km8 = km8.fit_predict(X)
-y_km9 = km9.fit_predict(X)
-y_km10 = km10.fit_predict(X)
-y_km11 = km11.fit_predict(X)
-y_km12 = km12.fit_predict(X)
+km8.fit(X)
+km9.fit(X)
+km10.fit(X)
+km11.fit(X)
+km12.fit(X)
 
-silhouette = [silhouette_score(X, y_km8), silhouette_score(X, y_km9), silhouette_score(X, y_km10), silhouette_score(X, y_km11), silhouette_score(X, y_km12)]
+y_km8 = km8.predict(X)
+y_km9 = km9.predict(X)
+y_km10 = km10.predict(X)
+y_km11 = km11.predict(X)
+y_km12 = km12.predict(X)
+
+silhouette = [silhouette_score(X, km8.labels_), silhouette_score(X, km9.labels_), silhouette_score(X, km10.labels_), silhouette_score(X, km11.labels_), silhouette_score(X, km12.labels_)]
 with open('kmeans_sil.pck', 'wb') as f:
     pickle.dump(silhouette, f)
 
 matrix = confusion_matrix(y, y_km10)
 
-array = np.array([], dtype=np.int32)
-for row in matrix:
-    max = int(np.argmax(row))
-    array = np.append(array, max)
-
-array = np.sort(array, axis=None)
+array = np.argmax(matrix, axis=1)
+array = np.sort(array)
 array = np.unique(array)
 
 with open('kmeans_argmax.pck', 'wb') as f:
