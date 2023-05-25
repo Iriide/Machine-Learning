@@ -59,6 +59,7 @@ tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
 
 model.fit(X_train, y_train, epochs=20,
                 validation_split=0.1,
+                validation_data=(X_test, y_test),
                 callbacks=[tensorboard_callback])
 
 image_index=np.random.randint(len(X_test))
