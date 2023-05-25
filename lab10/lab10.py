@@ -24,13 +24,13 @@ from sklearn.preprocessing import StandardScaler
 fashion_mnist = tf.keras.datasets.fashion_mnist
 (X_train, y_train), (X_test, y_test) = fashion_mnist.load_data()
 
-assert X_train.shape == (60000,28,28)
-assert X_test.shape == (10000,28,28)
+assert X_train.shape == (60000, 28, 28)
+assert X_test.shape == (10000, 28, 28)
 assert y_train.shape == (60000,)
 assert y_test.shape == (10000,)
 
-X_train = X_train / 225.0
-y_train = y_train / 225.0
+X_train = X_train / 255.0
+X_test = X_test / 255.0
 
 plt.imshow(X_train[142], cmap="binary")
 plt.axis('off')
