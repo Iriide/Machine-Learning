@@ -55,7 +55,7 @@ model.compile(loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
 log_dir = os.path.join("image_logs", time.strftime("%Y%m%d-%H%M%S"))
-tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
+tensorboard_callback = TensorBoard(log_dir=log_dir)
 
 model.fit(X_train, y_train, epochs=20,
                 validation_split=0.1,
