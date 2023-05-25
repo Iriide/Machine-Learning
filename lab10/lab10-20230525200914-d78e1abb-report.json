@@ -1,0 +1,40 @@
+{
+    "student_id": 412498,
+    "lab_id": "lab10",
+    "check_number": 2,
+    "score": 50.0,
+    "tests": [
+        {
+            "type": "keras_evaluate",
+            "file_name": "fashion_clf.h5",
+            "rule_points": 0.0,
+            "max_rule_points": 6.0,
+            "message": "niekt\u00f3re warto\u015bci metryk {'loss': 6498.36474609375, 'accuracy': 0.10000000149011612} nie spe\u0142niaj\u0105 kryteri\u00f3w"
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "reg_housing_1.h5",
+            "rule_points": 2.0,
+            "max_rule_points": 2.0
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "reg_housing_2.h5",
+            "rule_points": 2.0,
+            "max_rule_points": 2.0
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "reg_housing_3.h5",
+            "rule_points": 2.0,
+            "max_rule_points": 2.0
+        }
+    ],
+    "results": {
+        "points": 6.0,
+        "max_points": 12.0,
+        "score": 50.0,
+        "max_score": 100.0
+    },
+    "file_list": ".:\ntotal 2284\n-rw-rw-r-- 1 student student 2158696 May 25 20:10 fashion_clf.h5\n-rw-rw-r-- 1 student student   33613 May 25 20:09 fashion_mnist.png\ndrwxr-xr-x 5 student student    4096 May 25 20:11 housing_logs\ndrwxr-xr-x 3 student student    4096 May 25 20:09 image_logs\n-rw-r--r-- 1 student root       4667 May 25 20:09 lab10.py\n-rw-rw-r-- 1 student student   24000 May 25 20:11 reg_housing_1.h5\n-rw-rw-r-- 1 student student   40384 May 25 20:11 reg_housing_2.h5\n-rw-rw-r-- 1 student student   56744 May 25 20:11 reg_housing_3.h5\n\n./housing_logs:\ntotal 12\ndrwxr-xr-x 4 student student 4096 May 25 20:10 20230525-201057\ndrwxr-xr-x 4 student student 4096 May 25 20:11 20230525-201108\ndrwxr-xr-x 4 student student 4096 May 25 20:11 20230525-201125\n\n./housing_logs/20230525-201057:\ntotal 8\ndrwxr-xr-x 2 student student 4096 May 25 20:10 train\ndrwxr-xr-x 2 student student 4096 May 25 20:10 validation\n\n./housing_logs/20230525-201057/train:\ntotal 96\n-rw-rw-r-- 1 student student 96924 May 25 20:11 events.out.tfevents.1685045457.runner-pipnzenk-project-237-concurrent-0.55.2.v2\n\n./housing_logs/20230525-201057/validation:\ntotal 4\n-rw-rw-r-- 1 student student 3352 May 25 20:11 events.out.tfevents.1685045457.runner-pipnzenk-project-237-concurrent-0.55.3.v2\n\n./housing_logs/20230525-201108:\ntotal 8\ndrwxr-xr-x 2 student student 4096 May 25 20:11 train\ndrwxr-xr-x 2 student student 4096 May 25 20:11 validation\n\n./housing_logs/20230525-201108/train:\ntotal 164\n-rw-rw-r-- 1 student student 166158 May 25 20:11 events.out.tfevents.1685045468.runner-pipnzenk-project-237-concurrent-0.55.4.v2\n\n./housing_logs/20230525-201108/validation:\ntotal 8\n-rw-rw-r-- 1 student student 4288 May 25 20:11 events.out.tfevents.1685045469.runner-pipnzenk-project-237-concurrent-0.55.5.v2\n\n./housing_logs/20230525-201125:\ntotal 8\ndrwxr-xr-x 2 student student 4096 May 25 20:11 train\ndrwxr-xr-x 2 student student 4096 May 25 20:11 validation\n\n./housing_logs/20230525-201125/train:\ntotal 180\n-rw-rw-r-- 1 student student 181585 May 25 20:11 events.out.tfevents.1685045485.runner-pipnzenk-project-237-concurrent-0.55.6.v2\n\n./housing_logs/20230525-201125/validation:\ntotal 8\n-rw-rw-r-- 1 student student 4756 May 25 20:11 events.out.tfevents.1685045485.runner-pipnzenk-project-237-concurrent-0.55.7.v2\n\n./image_logs:\ntotal 4\ndrwxr-xr-x 4 student student 4096 May 25 20:09 20230525-200932\n\n./image_logs/20230525-200932:\ntotal 8\ndrwxr-xr-x 2 student student 4096 May 25 20:09 train\ndrwxr-xr-x 2 student student 4096 May 25 20:09 validation\n\n./image_logs/20230525-200932/train:\ntotal 136\n-rw-rw-r-- 1 student student 134520 May 25 20:10 events.out.tfevents.1685045372.runner-pipnzenk-project-237-concurrent-0.55.0.v2\n\n./image_logs/20230525-200932/validation:\ntotal 8\n-rw-rw-r-- 1 student student 6496 May 25 20:10 events.out.tfevents.1685045377.runner-pipnzenk-project-237-concurrent-0.55.1.v2\n"
+}
