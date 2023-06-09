@@ -7,9 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1qKXxa4xEJVBGIsLE_TYG2jd-xdEBwdbl
 """
 
-!pip install scikeras[tensorflow]
-!pip install keras-tuner
-
 from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
