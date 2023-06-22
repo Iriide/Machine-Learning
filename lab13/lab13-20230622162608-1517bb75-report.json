@@ -1,0 +1,88 @@
+{
+    "student_id": 412498,
+    "lab_id": "lab13",
+    "check_number": 1,
+    "score": 59.09,
+    "tests": [
+        {
+            "type": "file_pickle_tuple_minmax_last",
+            "file_name": "mae_baseline.pkl",
+            "rule_points": 1.0,
+            "max_rule_points": 2.0,
+            "message": "warto\u015bci w krotce (64.94387520147363, 208.2953603499885) w pliku 'mae_baseline.pkl' poza przedzia\u0142em"
+        },
+        {
+            "type": "file_pickle_tuple_minmax_last",
+            "file_name": "mae_linear.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "warto\u015bci w krotce (24425.039100838057,) w pliku 'mae_linear.pkl' poza przedzia\u0142em"
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "model_linear.h5",
+            "rule_points": 3.0,
+            "max_rule_points": 3.0
+        },
+        {
+            "type": "file_pickle_tuple_minmax_last",
+            "file_name": "mae_rnn1.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "warto\u015bci w krotce (253.22104893278276,) w pliku 'mae_rnn1.pkl' poza przedzia\u0142em"
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "model_rnn1.h5",
+            "rule_points": 3.0,
+            "max_rule_points": 3.0
+        },
+        {
+            "type": "file_pickle_tuple_minmax_last",
+            "file_name": "mae_rnn32.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "warto\u015bci w krotce (184.9046148925143,) w pliku 'mae_rnn32.pkl' poza przedzia\u0142em"
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "model_rnn32.h5",
+            "rule_points": 3.0,
+            "max_rule_points": 3.0
+        },
+        {
+            "type": "file_pickle_tuple_minmax_last",
+            "file_name": "mae_rnn_deep.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "warto\u015bci w krotce (187.56117573205162,) w pliku 'mae_rnn_deep.pkl' poza przedzia\u0142em"
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "model_rnn_deep.h5",
+            "rule_points": 0.0,
+            "max_rule_points": 3.0,
+            "message": "niekt\u00f3re warto\u015bci metryk {'loss': 124.05384826660156, 'mae': 124.55384826660156} nie spe\u0142niaj\u0105 kryteri\u00f3w"
+        },
+        {
+            "type": "file_pickle_tuple_minmax_last",
+            "file_name": "mae_rnn_mv.pkl",
+            "rule_points": 0.0,
+            "max_rule_points": 1.0,
+            "message": "warto\u015bci w krotce (187.4209368895082,) w pliku 'mae_rnn_mv.pkl' poza przedzia\u0142em"
+        },
+        {
+            "type": "keras_evaluate",
+            "file_name": "model_rnn_mv.h5",
+            "rule_points": 3.0,
+            "max_rule_points": 3.0
+        }
+    ],
+    "results": {
+        "points": 13.0,
+        "max_points": 22.0,
+        "score": 59.09,
+        "max_score": 100.0
+    },
+    "file_list": ".:\ntotal 232\ndrwxrwxr-x 2 student student  4096 Jun 22 16:26 datasets\n-rw-r--r-- 1 student root     5678 Jun 22 16:26 lab13.py\n-rw-rw-r-- 1 student student   137 Jun 22 16:26 mae_baseline.pkl\n-rw-rw-r-- 1 student student   118 Jun 22 16:26 mae_linear.pkl\n-rw-rw-r-- 1 student student   118 Jun 22 16:29 mae_rnn1.pkl\n-rw-rw-r-- 1 student student   118 Jun 22 16:31 mae_rnn32.pkl\n-rw-rw-r-- 1 student student   118 Jun 22 16:38 mae_rnn_deep.pkl\n-rw-rw-r-- 1 student student   118 Jun 22 16:40 mae_rnn_mv.pkl\n-rw-rw-r-- 1 student student 17600 Jun 22 16:26 model_linear.h5\n-rw-rw-r-- 1 student student 20240 Jun 22 16:29 model_rnn1.h5\n-rw-rw-r-- 1 student student 32784 Jun 22 16:31 model_rnn32.h5\n-rw-rw-r-- 1 student student 83832 Jun 22 16:38 model_rnn_deep.h5\n-rw-rw-r-- 1 student student 32784 Jun 22 16:40 model_rnn_mv.h5\n\n./datasets:\ntotal 1476\n-rw-rw-r-- 1 student student    5607 Jun 22 16:26 Readme.txt\n-rw-rw-r-- 1 student student  279992 Jun 22 16:26 bike_sharing_dataset.zip\n-rw-rw-r-- 1 student student   57569 Jun 22 16:26 day.csv\n-rw-rw-r-- 1 student student 1156736 Jun 22 16:26 hour.csv\n"
+}
